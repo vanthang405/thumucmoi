@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="Mycanvas" width="2000" height="500" style="border:3px solid #7cfe2c;"></canvas>
+<script>
+    function Rectangle(lenght, width, acreage, perimeter) {
+        this.length = lenght;
+        this.width = width;
+        this.acreage = acreage;
+        this.perimeter = perimeter;
+        this.getacreage = function () {
+            return (this.length * this.width);
+        };
+        this.getperimeter = function () {
+            return ((this.length + this.width) * 2);
+        };
+    }
+
+    let hcn = new Rectangle(2, 3);
+    let dientich = hcn.getacreage();
+    let chuvi = hcn.getperimeter();
+    document.write("<br/>"+"Dien tich hinh chu nhat la: " + hcn.getacreage());
+    document.write("<br/>"+"Chu vi hinh chu nhat la : " + hcn.getperimeter());
+    let vecanvans = document.getElementById("Mycanvas");
+let hinhcn = vecanvans.getContext("2d");
+hinhcn.fillStyle = "#ff625b";
+hinhcn.fillRect(500,100,300,300);
+</script>
+</body>
+</html>
