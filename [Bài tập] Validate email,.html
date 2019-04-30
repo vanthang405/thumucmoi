@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Validate email</title>
+</head>
+<body>
+<script>
+    regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$/;
+
+    function kiemtramail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            document.write("day la mau email hop le" + "" + "<br>");
+        }
+    else {
+            document.write("day la mau email khong hop le" + "<br>");
+        }
+
+    }
+
+    kiemtramail("a@gmail.com");
+    kiemtramail("ab@yahoo.com");
+    kiemtramail("abc@hotmal.com");
+    kiemtramail("@gmail.com");
+    kiemtramail("ab@gmai");
+    kiemtramail("@#abc@gmail.com");
+</script>
+</body>
+</html>
