@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] Kiểm tra ký tự đầu tiên của chuỗi có phải là chữ hoa không.</title>
+</head>
+<body>
+<script>
+    regexp = /^[A-Z]/;
+    function upperpcrce(str) {
+        regexp = /^[A-Z]/;
+        if (regexp.test(str)) {
+            document.write('ký tự đầu tiên của chuỗi có phải là chữ hoa' +"<br>");
+        }
+        else {
+            document.write('ký tự đầu tiên của chuỗi khong phải là chữ hoa' + "<br>");
+        }
+    }
+    upperpcrce('Abc');
+    upperpcrce('abc');
+    upperpcrce(' Nguyen van Nam');
+    upperpcrce(' NGUYEN VAN NAM');
+    upperpcrce('nguyen van Nam');
+</script>
+</body>
+</html>
