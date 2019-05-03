@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate account</title>
+</head>
+<body>
+<script>
+
+function checktentaikhoan(str) {
+    str = prompt("mai ban nhap tai khoan");
+    regexp = /^[_a-z0-9]{6,}$/;
+    if (regexp.test(str)) {
+        document.write("day la tai khoan hop le"+"<br>");
+    } else {
+        document.write("day la tai khoan khong hop le" + "<br>");
+    }
+
+}
+checktentaikhoan();
+</script>
+</body>
+</html>
